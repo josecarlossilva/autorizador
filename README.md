@@ -155,7 +155,6 @@ Para testar a funcionalidade de autorização de transações, utilize a seguint
 ```sh
 curl --location 'http://localhost:8080/transactions/authorize' \
 --header 'Content-Type: application/json' \
---header 'X-API-Key: {{token}}' \
 --data '{
   "account": "123",
   "totalAmount": 100.00,
