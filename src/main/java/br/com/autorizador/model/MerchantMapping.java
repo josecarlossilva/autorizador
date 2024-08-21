@@ -12,6 +12,6 @@ public class MerchantMapping {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String merchantName;
+    private String merchant;
     private String correctedMcc;
 }

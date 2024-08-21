@@ -21,4 +21,9 @@ public class BenefitCategory {
     private String mcc;
     private double balance;
     private String category;
+
+    public BenefitCategory(String category, double balance) {
+        this.category = category;
+        this.balance = balance;
+    }
 }

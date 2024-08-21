@@ -7,5 +7,5 @@ import java.util.Optional;
 
 public interface MerchantMappingRepository extends JpaRepository<MerchantMapping, Long> {
 
-    Optional<MerchantMapping> findByMerchantName(String merchantName);
+    Optional<MerchantMapping> findByMerchant(String merchant);
 }

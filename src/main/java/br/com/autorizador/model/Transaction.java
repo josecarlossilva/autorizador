@@ -1,5 +1,6 @@
 package br.com.autorizador.model;
 
+import com.fasterxml.jackson.annotation.JsonAlias;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -14,6 +15,8 @@ public class Transaction {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String mcc;
+
+    @JsonAlias("totalAmount")
     private double amount;
     private String merchant;
 }
